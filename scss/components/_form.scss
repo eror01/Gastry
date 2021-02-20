@@ -1,0 +1,135 @@
+.book{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/reservation.png) no-repeat center center/cover;
+    position: relative;
+
+    &__box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 0 1rem 0 rgba(0,0,0,.5);
+        display: flex;
+
+        .book__time {
+            width: 35rem;
+            height: 100%;
+            background-color: $font-color-2;
+            text-align: center;
+
+            .logo-md{
+                width: 8rem;
+                background-size: cover;
+                background-position: center;
+                margin-top: 3rem;
+            }
+
+            h2{
+                margin-top: 8rem;
+                font-size: 4.5rem;
+                letter-spacing: 4px;
+                color: $font-color;
+                font-weight: 100;
+                margin-bottom: -1.6rem;
+            }
+
+            h3{
+                margin-bottom: 4rem;
+                font-size: 3rem;
+                font-weight: lighter;
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+            h4{
+                font-size: 2.5rem;
+                font-weight: lighter;
+                text-transform: uppercase;
+                color: $font-color;
+            }
+
+            .book__clock {
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+                font-size: 2rem;
+                color: #fff;
+                font-weight: 100;
+            }
+
+            p{
+                margin-top: 15rem;
+                font-size: 2.5rem;
+                color: $font-color;
+            }
+
+            span{
+                font-size: 2rem;
+                color: $font-color;
+            }
+        }
+
+        &-2{
+            width: 50%;
+            height: 100%;
+            margin: 0 auto;
+
+            .book__heading{
+                text-align: center;
+                padding-top: 5rem;
+
+                h2{
+                    font-size: 4.5rem;
+                    color: #fff;
+                    font-weight: 100;
+                    margin-bottom: -1.5rem;
+                }
+
+                p{
+                    font-size: 4.5rem;
+                    font-weight: 100;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+
+            .book__form{
+                margin: 5rem auto;
+                width: 50rem;
+                height: 47rem;
+                background-color: #fff;
+                padding: 3rem 3rem;
+
+                input{
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    margin-bottom: 5rem;
+                    border-bottom: 2px solid $font-color-2;
+                    padding: .5rem 0;
+                    font-size: 1.5rem;
+
+                    &::placeholder{
+                        color: $font-color;
+                        opacity: 1;
+                    }
+                }
+
+                input[type="date"]{
+                    width: 38%;
+                    margin-right: 10.2rem;
+                    color: $font-color;
+                }
+
+                input[type="time"]{
+                    width: 38%;
+                    color: $font-color;
+                }
+            }
+        }
+    }
+}

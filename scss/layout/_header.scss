@@ -1,0 +1,64 @@
+.header{
+    height: 100vh;
+    width: 100%;
+    background: url(../img/hero.jpg) no-repeat center center/cover;
+
+    .nav{
+        width: 29rem;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        transition: animation .3s ease-in-out;
+        animation:  fromLeft 1s;
+
+        .nav__bar{
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 2.5rem;
+            animation: fromBottom 2s ease-in-out;
+
+            img{
+                width: 15rem;
+                height: 18rem;
+                background-size: cover;
+                background-position: center;
+            }
+
+            h1{
+                font-size: 4.5rem;
+                font-family: 'Ashby Light', sans-serif;
+                letter-spacing: .6rem;
+                text-transform: uppercase;
+                color: $font-color;
+            }
+
+            .nav__links {
+                margin-top: 12rem;
+                text-align: left;
+                font-size: 3rem;
+                list-style: none;
+                
+
+                .nav__link {
+                    margin-top: 3rem;
+
+                    .nav__item {
+                        color: $font-color;
+                        text-decoration: none;
+                        font-weight: 100;
+                        padding: .5rem 1rem;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}

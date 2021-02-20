@@ -1,0 +1,43 @@
+.gallery {
+    width: 83%;
+    height: 100%;
+    margin-left: auto;
+
+    .gallery__heading{
+        text-align: center;
+        margin-right: 29rem;
+
+        h1{
+            font-size: 5rem;
+            color: $font-color;
+            margin-bottom: -1.5rem;
+            font-weight: 100;
+        }
+
+        p{
+            font-size: 3rem;
+            font-weight: 100;
+            color: $font-color-2;
+            text-transform: uppercase;
+        }
+
+        span{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    }
+
+    .gallery__images{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto, 6rem;
+        grid-auto-flow: dense;
+        gap: 1rem;
+
+        img{
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+    }
+}

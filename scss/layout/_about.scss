@@ -1,0 +1,80 @@
+.about {
+    width: 100%;
+    height: 100%;
+    padding-left: 3rem;
+
+    .about__images {
+        width: 75%;
+        height: 100%;
+        margin: 10rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        transition: all 3 ease;
+
+            .img-int:hover{
+                border: 8px solid rgba($font-color-2, .9);
+                transform: translateY(-10px);
+            }
+
+
+        .about__chef {
+            width: 45rem;
+            height: 55rem;
+            background-color: $font-color-2;
+            text-align: center;
+
+            h2{
+                font-size: 5rem;
+                color: $font-color;
+                font-weight: 100;
+                margin-bottom: -1.5rem;
+                margin-top: 1rem;
+            }
+
+            h3{
+                font-size: 2.1rem;
+                font-weight: lighter;
+                text-transform: uppercase;
+                color: #fff;
+            }
+
+            .logo-sm {
+                width: 2.5rem;
+                object-fit: cover;
+                background-position: center;
+                background-size: cover;
+                margin-top: 1.5rem;
+            }
+
+            p{
+                margin-top: 7rem;
+                color: #fff;
+                font-size: 1.5rem;
+                line-height: 1.8;
+                font-weight: lighter;
+                padding: 0 4rem;
+            }
+
+            .img-chef{
+                height: 16rem;
+                margin-top: 5rem;
+            }
+
+            h4{
+                font-size: 2rem;
+                color: #fff;
+                font-weight: 100;
+            }
+
+            h5{
+                font-size: 1.5rem;
+                color: $font-color;
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
