@@ -14,8 +14,12 @@
         position: relative;
         transition: all 3 ease;
 
+            .img-int {
+                transition: all .2s ease-in-out;
+            }
+
             .img-int:hover{
-                border: 8px solid rgba($font-color-2, .9);
+                border: 6px solid rgba($font-color-2, .9);
                 transform: translateY(-10px);
             }
 
@@ -76,5 +80,9 @@
                 text-transform: uppercase;
             }
         }
+    }
+
+    .about__images .img-int {
+        width: 29rem;
     }
 }
