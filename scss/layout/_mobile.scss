@@ -140,6 +140,18 @@
             }
         }
     }
+
+    .book{
+
+        .book__box{
+            width: 90%;
+            height: 90%;
+
+            .book__time{
+                width: 30rem;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1120px){
@@ -184,6 +196,32 @@
 
             img{
                 height: 100%;
+            }
+        }
+    }
+
+    .book{
+
+        .book__box{
+            width: 90%;
+            height: 90%;
+
+            .book__time{
+                width: 25rem;
+            }
+
+            .book__box-2{
+                width: 80%;
+            }
+
+            .book__form{
+                width: 46rem;
+                height: 47rem;
+                padding: 1rem 1rem;
+
+                .btn-back{
+                    margin-right: 5rem;
+                }
             }
         }
     }
